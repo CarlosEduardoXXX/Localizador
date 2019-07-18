@@ -1,0 +1,27 @@
+
+<h1>Novo Veículo</h1>
+
+<%= form_for(vehicle) do |f| %>
+
+  <%= f.hidden_field :office_id %>
+
+  <p>
+    <%= f.label :chassi %><br />
+    <%= f.text_field :chassi %>
+  </p>
+
+  <p>
+    <%= f.label :placa %><br />
+    <%= f.text_field :placa %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+
+  <p>
+    <%= f.submit "Criar" %>
+  </p>
+
+<% end %>

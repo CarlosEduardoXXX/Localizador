@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  chassi: MyString
+  placa: MyString
+  description: MyString
+  office: one
+
+two:
+  chassi: MyString
+  placa: MyString
+  description: MyString
+  office: two

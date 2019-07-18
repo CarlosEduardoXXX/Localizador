@@ -1,0 +1,24 @@
+
+<h1>Escritorio</h1>
+
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%=h @office.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%=h @office.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%=h @office.state %>
+</p>
+
+<%= render :partial=>"new_vehicle", :locals=>{:vehicle=>Vehicle.new(:office_id=>@office.id) } %>
+
+<%= link_to 'Edit', edit_office_path(@office) %> |
+<%= link_to 'Back', offices_path %>

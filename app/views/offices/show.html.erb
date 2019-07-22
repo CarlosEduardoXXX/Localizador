@@ -18,6 +18,8 @@
   <%=h @office.state %>
 </p>
 
+<%= render :partial=>"vehicle_list", :locals=>{:vehicles=>Vehicle.all } %>
+
 <%= render :partial=>"new_vehicle", :locals=>{:vehicle=>Vehicle.new(:office_id=>@office.id) } %>
 
 <%= link_to 'Edit', edit_office_path(@office) %> |

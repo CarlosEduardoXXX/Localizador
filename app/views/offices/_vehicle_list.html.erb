@@ -1,0 +1,15 @@
+<% for vehicle in vehicles %>
+
+  <tr>
+
+    <td><%=h vehicle.chassi %></td>
+    <td><%=h vehicle.placa %></td>
+    <td><%=h vehicle.description %></td>
+    <td><%= link_to 'Exibir', vehicle %></td>
+    <td><%= link_to 'Editar', edit_vehicle_path(vehicle) %></td>
+    <td><%= link_to 'Excluir', vehicle, :confirm => 'Tem certeza?', :method => :delete %></td>
+
+  </tr>
+
+<% end %>
+
